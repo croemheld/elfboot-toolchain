@@ -1,0 +1,6 @@
+[submodule "elfboot-gcc"]
+	path = elfboot-gcc
+	url = https://github.com/croemheld/elfboot-gcc
+[submodule "elfboot-binutils"]
+	path = elfboot-binutils
+	url = https://github.com/croemheld/elfboot-binutils
