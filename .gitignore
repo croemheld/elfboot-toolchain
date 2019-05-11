@@ -1,0 +1,11 @@
+#
+# Ignore build directories
+#
+
+bin/*
+binutils-build/*
+gcc-build/*
+i686-elfboot/*
+lib/*
+libexec/*
+share/*
