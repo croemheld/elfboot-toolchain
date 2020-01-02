@@ -11,6 +11,8 @@ ELFBOOT_PREFIX="$(pwd)"
 mkdir -p binutils-build
 cd binutils-build
 
+echo "Building elfboot-binutils..."
+
 ../elfboot-binutils/configure		\
 	--target=$ELFBOOT_TARGET	\
 	--prefix=$ELFBOOT_PREFIX	\
@@ -25,7 +27,12 @@ echo "Successfully installed elfboot-binutils."
 
 cd $ELFBOOT_PREFIX
 
+echo "Building elfboot-gcc..."
+echo "Download prerequisites..."
+
+cd elfboot-gcc
 ./contrib/download_prerequisites
+cd $ELFBOOT_PREFIX
 
 mkdir -p gcc-build
 cd gcc-build
