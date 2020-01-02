@@ -12,4 +12,6 @@ The toolchain generates a cross compiler to create executable code for the x86 a
 
 To build GCC, the packages `bison`, `flex` and `texinfo` are required:
 
-> sudo apt-get install bison flex texinfo
+```shell
+$ sudo apt-get install bison flex texinfo
+```
