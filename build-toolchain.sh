@@ -25,6 +25,8 @@ echo "Successfully installed elfboot-binutils."
 
 cd $ELFBOOT_PREFIX
 
+./contrib/download_prerequisites
+
 mkdir -p gcc-build
 cd gcc-build
 
