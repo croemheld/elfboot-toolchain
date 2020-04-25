@@ -41,15 +41,15 @@ cd gcc-build
 	--target=$ELFBOOT_TARGET	\
 	--prefix=$ELFBOOT_PREFIX	\
 	--disable-nls			\
-	--enable-languages=c,c++	\
+	--enable-languages=c		\
 	--without-headers
 
 make all-gcc
+make all-target-libgcc
 make install-gcc
 
 echo "Successfully installed elfboot-gcc."
 
-make all-target-libgcc
 make install-target-libgcc
 
 echo "Successfully installed libgcc for target $ELFBOOT_TARGET."
